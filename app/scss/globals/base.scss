@@ -1,0 +1,27 @@
+@use "../utilities" as *;
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-size: $base_font_size;
+    font-family: $san_serif_font;
+    background-color: var(--light);
+}
+
+
+main{
+    padding: 2em;
+    min-height: 100vh;
+}

@@ -1,0 +1,27 @@
+@use "../utilities" as *;
+
+.footer{
+
+    text-align: center;
+    &__attribution{
+        padding: rem(10);
+        background: var(--dark-blue);
+        border-top-right-radius: rem(40);
+        border-top-left-radius: rem(40);
+        color: var(--white);
+        
+        a{
+            color: var(--dark-cyan);
+            transition: color 350ms ease;
+
+            &:hover{
+                color: lighten(hsl(185, 75%, 39%), 10%);
+            }
+
+            &:focus,
+            &:active{
+                color: var(--dark-cyan);
+            }
+        }
+    }
+}

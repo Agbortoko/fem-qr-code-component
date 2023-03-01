@@ -1,0 +1,29 @@
+@use "sass:math";
+
+@function rem($pixel, $context: 16){
+
+    @if(math.is_unitless($pixel)){
+
+        @return math.div($pixel , $context) * 1rem;
+
+    }
+    @else{
+        @error "Make sure #{$pixel} is unitless (remove the px)";
+    }
+
+}
+
+
+
+@function em($pixel, $context: 16){
+
+    @if(math.is_unitless($pixel)){
+
+        @return math.div($pixel , $context) * 1em;
+
+    }
+    @else{
+        @error "Make sure #{$pixel} is unitless (remove the px)";
+    } 
+
+}

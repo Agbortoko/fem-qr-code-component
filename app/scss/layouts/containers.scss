@@ -1,0 +1,15 @@
+@use "../utilities" as *;
+
+.container{
+    padding: 0 rem(24);
+    margin: auto;
+    
+    @include breakpoint-up(large){
+        max-width: rem(1110) ;
+        padding: 0;
+    }
+}
+
+.h-full{
+    min-height: 100vh;
+}

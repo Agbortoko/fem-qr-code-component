@@ -1,0 +1,35 @@
+@use "../utilities" as *;
+
+.card{
+    background-color: var(--white);
+    box-shadow: 0 rem(2) rem(20) 0 rgba(0,0,0,0.1);
+    padding: 0.8em;
+    max-width: rem(350);
+    text-align: center;
+    border-radius: rem(20);
+    
+
+    &__header{
+
+       img{
+        max-width: 100%;
+        width: rem(250);
+        border-radius: rem(10);
+       }
+    }
+    
+    &__body{
+        padding: rem(16) 0.2em;
+    }
+
+    &__title{
+        color: var(--dark-blue);
+        text-align: center;
+    }
+
+    &__desc{
+        color: var(--grayish-blue);
+        text-align: center;
+    }
+
+}

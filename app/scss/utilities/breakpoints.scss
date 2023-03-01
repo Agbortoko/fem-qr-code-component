@@ -1,0 +1,36 @@
+@use 'functions' as *;
+
+// 640px, 1150px, 1400px
+
+$breakpoints-up: (
+    "medium": em(640), // 40em
+    "large": em(1150), // 71.875em
+    "xlarge": em(1400) // 87.5em
+);
+
+
+// 639px, 1149px, 1399px
+
+$breakpoints-down: (
+    "small" : em(639), // 39.9375em
+    "medium" : em(1149), // 71.8125em
+    "large" : em(1399) // 87.4375em
+);
+
+
+@mixin breakpoint-up($size){
+
+    @media(min-width: map-get($breakpoints-up, $size)){
+        @content;
+    }
+
+}
+
+
+@mixin breakpoint-down($size){
+
+    @media(max-width: map-get($breakpoints-down, $size)){
+        @content;
+    }
+
+}
