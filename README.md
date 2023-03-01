@@ -28,7 +28,7 @@ As seen in the screenshot below, there is a qr code image which when scanned tak
 ### Links
 
 - Solution URL: ["QR Code Component Preview"](https://github.com/Agbortoko/fem-qr-code-component/)
-- Live URL: ["QR Code Component Live Implementation"](https://agbortoko.github.io/qr-code-component/)
+- Live URL: ["QR Code Component Live Implementation"](https://agbortoko.github.io/fem-qr-code-component/)
 
 ## My process
 
